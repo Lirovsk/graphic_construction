@@ -18,14 +18,16 @@ for i in range(number_columns):
     list_of_column_names.append(name)
 
 data = []
+counter = 1
 while True:
     local_row = []
     try:
         for i in range(len(list_of_column_names)):
-            value = input(f"Enter value for {list_of_column_names[i]}: ")
+            value = input(f"Enter value {counter} for {list_of_column_names[i]}: ")
             local_row.append(value)
             
         data.append(local_row)
+        counter += 1
     except KeyboardInterrupt:
         break
     
