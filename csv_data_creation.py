@@ -2,7 +2,7 @@
 from pathlib import Path
 import pandas as pd
 
-dir_path = Path.cwd() / "data.csv"
+dir_path = Path.cwd() / "set_of_data"
 
 if not dir_path.exists():
     dir_path.mkdir(parents=True, exist_ok=True)
